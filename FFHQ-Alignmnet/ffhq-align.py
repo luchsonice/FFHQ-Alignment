@@ -102,7 +102,7 @@ if __name__ == '__main__':
     if not os.path.exists(args.dst):
         os.mkdir(args.dst)
 
-    landmarks_detector = face_alignment.FaceAlignment(face_alignment.LandmarksType._3D, flip_input=False)
+    landmarks_detector = face_alignment.FaceAlignment(face_alignment.LandmarksType.THREE_D, flip_input=False)
 
     for img_name in os.listdir(args.src):
         raw_img_path = os.path.join(args.src, img_name)
